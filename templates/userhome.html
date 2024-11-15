@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home - Car Management</title>
+
+    <link rel="stylesheet" href="static/css/userhome.css">
+     <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Car Management</a>
+            <ul class="navbar-links">
+                <li><a href="{% url 'userhome' %}">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="{% url 'userlogout' %}">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="welcome-section">
+            <h1>Welcome!</h1>
+            <p>Manage and track all your car details, service schedules, and maintenance history in one place.</p>
+        </div>
+
+        <!-- Action Cards Section -->
+        <section class="action-cards">
+            <div class="card">
+                <h3>Add a New Car</h3>
+                <p>Register and track new car details, including make, model, and year.</p>
+                <a href="{% url 'addcar' %}" class="button">Add Car</a>
+            </div>
+            <div class="card">
+                <h3>Display All Cars</h3>
+                <p>View and manage all the cars you have registered.</p>
+                <a href="{% url 'displayallcars' %}" class="button">View Cars</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Car Management App. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Hero Section */
+.hero {
+    background: #4CAF50;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero-container h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.how-it-works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.how-it-works-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 30%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.step h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 16px;
+    color: #555;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .feature-item {
+        width: 80%;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Management Application</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/home.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="{% url 'index' %}" class="navbar-logo">Car Management</a>
+            <ul class="navbar-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'joinus' %}">Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+ <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Welcome to Car Management</h1>
+            <p>Your go-to platform for managing all your car-related needs with ease.</p>
+            <a href="{% url 'joinus' %}" class="cta-button">Join Us</a>
+            <a href="{% url 'login' %}" class="cta-button">Login</a>
+        </div>
+    </section>
+
+      <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <h2>Key Features</h2>
+            <div class="feature-item">
+                <h3>Track Your Cars</h3>
+                <p>Easily manage and track your car's details, service history, and more.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Service Reminders</h3>
+                <p>Get timely reminders for car servicing, insurance renewals, and other important tasks.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Maintenance History</h3>
+                <p>Keep a detailed log of all your car's maintenance activities and costs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="how-it-works-container">
+            <h2>How It Works</h2>
+            <p>Getting started with Car Management is easy! Follow these simple steps:</p>
+            <div class="steps-container">
+                <div class="step">
+                    <h3>1. Sign Up</h3>
+                    <p>Create an account to access the platform.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Add Your Cars</h3>
+                    <p>Add details of your cars and start managing them.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Track and Manage</h3>
+                    <p>Enjoy easy access to all your car's information in one place!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Car Management Application. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Management Application</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="{% url 'home' %}" class="navbar-logo">Car Management</a>
+            <ul class="navbar-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'joinus' %}">Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h1>Welcome to Car Management Application</h1>
+        <p>Manage your cars effortlessly with this easy-to-use platform.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Car Management App. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

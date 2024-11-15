@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home - Car Management</title>
+    <link rel="stylesheet" href="static/css/userhome.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/addcar.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Car Management</a>
+            <ul class="navbar-links">
+                <li><a href="{% url 'userhome' %}">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="{% url 'userlogout' %}">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+ <div class="content">
+        <h3 align="center"><mark>{{ msg }}</mark></h3>
+
+        {% if errors %}
+        <div style="color: red;">
+            <ul>
+                {% for field, error in errors.items %}
+                <li>{{ field }}: {{ error|join:", " }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <h3 align="center"><u>Add Car Details</u></h3>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table align="center">
+                {% for field in carform %}
+                <tr>
+                    <td><label>{{ field.label }}</label></td>
+                    <td>{{ field }}</td>
+                </tr>
+                {% endfor %}
+                <tr align="center">
+                    <td colspan="2"><input type="submit" value="Add" class="button"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

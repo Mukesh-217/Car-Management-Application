@@ -1,0 +1,105 @@
+/* Apply padding to the content container */
+.content {
+    padding-top: 80px; /* Same as the navbar height */
+    margin: 0 auto;
+    max-width: 1200px; /* Optional: Center the content and limit its width */
+}
+
+/* Centered Heading */
+h3 {
+    color: #34495e;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Form Container */
+form {
+    background: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+td {
+    padding: 0.8rem;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    color: #34495e;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+/* Submit Button */
+.button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* Error Styling */
+div[style="color: red;"] {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+div[style="color: red;"] ul {
+    margin-left: 1rem;
+    list-style-type: circle;
+}

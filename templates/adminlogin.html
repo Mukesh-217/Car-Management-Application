@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Car Management Application</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Car Management</a>
+            <ul class="navbar-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'joinus' %}">Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form method="POST" action="{% url 'checkadminlogin' %}">
+        {% csrf_token %}
+
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <button type="submit" name="submit">Login</button>
+    </form>
+</div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Car Management App. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

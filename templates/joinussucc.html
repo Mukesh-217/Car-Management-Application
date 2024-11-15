@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Management Application</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="" class="navbar-logo">Car Management</a>
+            <ul class="navbar-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'joinus' %}">Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Registration Success Message -->
+    <div class="main-content">
+        <h1>Registration Successful!</h1>
+        <p>Your registration was successful. You can now <a href="{% url 'login' %}">login</a> to access your account.</p>
+    </div>
+
+    <!-- Footer (optional) -->
+    <footer>
+        <p>&copy; 2024 Car Management Application</p>
+    </footer>
+</body>
